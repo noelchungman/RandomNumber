@@ -11,9 +11,9 @@ app -> java -> com.xxx.xxx -> MainActivity.kt
         var luckyNumber = Random.nextInt(1,101)
         luckyNumberTV.text = luckyNumber.toString()
     }
-    ```
-  
+   ```
   app -> res -> layout -> activity_main.xml
+        
   <TextView
         android:id="@+id/luckyNumberTV"
         android:layout_width="wrap_content"
@@ -38,3 +38,4 @@ app -> java -> com.xxx.xxx -> MainActivity.kt
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+    ```
