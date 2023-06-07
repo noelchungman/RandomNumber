@@ -4,7 +4,9 @@ Random Number from 1 to 100
 app -> java -> com.xxx.xxx -> MainActivity.kt
    fun generateNextNum(v: View){
         var luckyNumberTV = findViewById<TextView>(R.id.luckyNumberTV)
-        var luckyNumber = Random.nextInt(1,99)
+        
+        // 2nd property of Random.nextInt is until, so 101 will not be in possibility
+        var luckyNumber = Random.nextInt(1,101)
         luckyNumberTV.text = luckyNumber.toString()
     }
   

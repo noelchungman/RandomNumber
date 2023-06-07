@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
     fun generateNextNum(v: View){
-        var luckyNumberTV = findViewById<TextView>(R.id.luckyNumberTV)
+        val luckyNumberTV = findViewById<TextView>(R.id.luckyNumberTV)
 
         // 2nd property of Random.nextInt is until, so 101 will not be in possibility
         var luckyNumber = Random.nextInt(1,101)
